@@ -1,0 +1,19 @@
+{% load static %}
+{% load socialaccount %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン - AI Profile</title>
+    <link rel="stylesheet" href="{% static 'web/login.css' %}">
+</head>
+<body>
+    <div class="login-container">
+        <h1>AI Profile ログイン</h1>
+        <a class="google-btn" href="{% provider_login_url 'google' %}">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo">
+            Sign in with Google
+        </a>
+    </div>
+</body>
+</html>
